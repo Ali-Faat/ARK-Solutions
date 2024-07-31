@@ -1,0 +1,162 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis CSS */
+:root {
+    --main-font: sans-serif;
+    --main-font-size: 16px;
+    --main-color: #333;
+    --link-color: #000;
+    --link-hover-color: #000;
+    --background-light: #f7f7f7;
+    --background-dark: #0b2240;
+    --hero-font-size: 36px;
+    --central-font-size: 48px;
+    --central-font-color: #fff;
+    --central-p-color: #cccccc5c;
+}
+
+/* Estilo Global */
+body {
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
+    line-height: 1.5;
+    color: var(--main-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.logo-container {
+    margin: 10px;
+}
+
+/* Logo */
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    position: relative;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.slogan {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Espaçamento entre itens do menu */
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+nav ul li a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Hero */
+.hero {
+    background-color: var(--background-light);
+    padding: 25px 0;
+}
+
+.hero h1 {
+    font-size: var(--hero-font-size);
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Central */
+.central {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(95vh - 160px); /* Altura dinâmica */
+    background-color: var(--background-dark);
+    padding: 20px;
+}
+
+.central-content {
+    text-align: center;
+}
+
+.central h2 {
+    color: var(--central-font-color);
+    font-size: var(--central-font-size);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#par {
+    color: var(--central-p-color);
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-column h2, .footer-column a, .footer-column p {
+    margin: 5px 0;
+}
+
+/* Classe Invisível */
+#invisivel {
+    color: #ffffff00;
+}
